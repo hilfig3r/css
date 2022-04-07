@@ -1,0 +1,375 @@
+/* Fonts */
+/* Fonts */
+@font-face {
+  font-family: update; 
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); 
+  }
+
+@font-face { 
+  font-family: DS;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); 
+}
+
+@font-face {
+  font-family: 'Ginto Nord';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ginto Nord';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ginto Nord';
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ginto Normal';
+  src: url('https://assets.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8e384c11e54fd6986f3b_ABCGintoNormal-Bold.woff') format('woff'), url('https://assets.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8e3839e8be3006a06146_ABCGintoNormal-Black.woff') format('woff'), url('https://assets.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8e380cf36e820fde5cca_ABCGintoNormal-Medium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mario64';
+    src: url('/fonts/Mario64.eot');
+    src: url('/fonts/Mario64.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Mario64.woff2') format('woff2'),
+        url('/fonts/Mario64.woff') format('woff'),
+        url('/fonts/Mario64.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+  font-family: DS-Bios;
+  src: url('https://moyaimoment.github.io/fonts/Nintendo-DS-BIOS.ttf'); 
+}
+
+@font-face {
+  font-family: tomodachi; 
+  src: url('https://moyaimoment.github.io/fonts/tomodachi.ttf'); 
+}
+
+/* https://www.fontsquirrel.com/presentation/theme_site/fonts/megalopolisextra-webfont.woff */
+
+/* Updates page */
+div.update {
+  margin: 15px 25px 10px;
+}
+
+/* MATH tiles */
+
+.click {
+  position: relative;
+  float:left
+}
+
+.image:hover {
+  transition: .5s ease;
+  transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.image {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform .22s;
+  border-radius: 30px;
+  margin: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.click:hover .image {
+  transition: .5s ease;
+  border-radius: 122px;
+  filter: blur(2.2px);
+  -webkit-filter: blur(2.2px);
+  transform: scale(1.1);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.click:hover .middle {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: 'Baloo', cursive;
+  text-shadow: 2px 2px 40px black;
+  border-radius: 30px;
+  filter: blur(0px) !important;
+  -webkit-filter: blur(0px) !important;
+  position: absolute;
+}
+
+.text {
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  padding: 5px 10px;
+  text-align: bottom;
+  word-wrap: break-word;
+  inline-size: 120px; 
+  overflow-wrap: break-word;
+}
+
+.center {
+  width: 1200px;
+  height: 520px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+}
+
+/* body */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+small {
+  font-size: 12px;
+  color: rgba(1, 0, 0, 16);
+}
+
+
+h1 {
+  text-align: center;
+  padding: 2px 0;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+  color:   #dedede;
+  font-size: 40px;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 300;
+  color: #dedede;
+  padding: 20px;
+}
+
+
+.center {
+  text-align: center;
+}
+
+
+section {
+  height: 10vh;
+}
+
+
+/* NAVIGATION */
+ul {
+    display: -webkit-box;
+    list-style-type: disc;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+    margin-inline-start: 0px;
+    margin-inline-end: 100px;
+    padding-inline-start: 0px;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #77ee7754;
+  padding: 1px 0;
+  box-shadow: 0px 3px 0px #2f2f2f80;
+}
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  
+}
+nav ul li a {
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* Circle */
+nav.circle ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.circle ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: #dedede;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: #dedede;
+}
+nav.circle ul li a:hover:after {
+  -webkit-animation: circle 1.5s ease-in forwards;
+}
+
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+  
+  .dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+
+.dropdown {
+    display: inline-block;
+    border-radius: 25px;
+    background: #fff;
+}
+
+
+.dropdown-content {
+display: none;
+    border-radius: 25px;
+    position: absolute;
+    background-color: #d3d3d345;
+    min-width: 150px;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.dropdown-content a {
+    color: black;
+    border-radius: 25px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+      background: #fff;
+}
+
+nav a {
+    display: block;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 5px;
+    margin-inline-end: auto;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+  
+  nav a.name {
+    display: block;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 45px;
+    margin-inline-end: auto;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+  
+.disco {
+       display: block;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+  
+  
+  
+}
+  
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
